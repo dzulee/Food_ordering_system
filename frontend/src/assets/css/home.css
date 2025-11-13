@@ -1,0 +1,180 @@
+/* -----------------------------
+   Global Styles
+----------------------------- */
+.navbar .bi-cart3 {
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.navbar .badge {
+  border: 2px solid #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+.text-danger {
+  color: #e23744 !important;
+}
+
+/* -----------------------------
+   Hero Section
+----------------------------- */
+.hero-section {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+/* -----------------------------
+   Search Bar
+----------------------------- */
+.search-bar {
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.search-bar input {
+  border-radius: 50px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 0.95rem;
+}
+
+.search-bar select {
+  height: 45px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+.search-bar button {
+  height: 45px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #e23744;
+  border: none;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #c32b36;
+}
+
+/* -----------------------------
+   Restaurant Cards
+----------------------------- */
+.restaurant-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #fff;
+}
+
+.restaurant-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover img {
+  transform: scale(1.05);
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card .card-body {
+  padding: 1.2rem;
+}
+
+/* -----------------------------
+   Footer
+----------------------------- */
+.footer {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+/* -----------------------------
+   Responsive
+----------------------------- */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+  }
+}

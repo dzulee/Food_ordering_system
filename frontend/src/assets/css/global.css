@@ -1,0 +1,65 @@
+/* src/assets/css/global.css */
+
+/* ===== Brand Colors ===== */
+:root {
+  --primary-color: #E23744;
+  --secondary-color: #ff5a5f;
+  --text-dark: #222;
+  --text-light: #fff;
+  --bg-light: #f8f9fa;
+  --border-radius: 0.5rem;
+  --shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.badge.bg-secondary {
+  background-color: #E23744 !important;
+}
+
+/* ===== Global Typography ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* ===== Buttons ===== */
+.btn-danger {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.btn-outline-danger {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 1.5rem;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-custom .btn {
+  border-radius: 20px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1.2rem 0;
+  text-align: center;
+}

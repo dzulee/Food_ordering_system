@@ -1,0 +1,39 @@
+/* Navbar Customization */
+.navbar {
+  border-bottom: 2px solid #f3f3f3;
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #e23744;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile Fixes */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

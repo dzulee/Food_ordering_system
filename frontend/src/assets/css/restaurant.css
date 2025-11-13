@@ -1,0 +1,94 @@
+/* -----------------------------
+   Restaurant Details Page
+----------------------------- */
+.restaurant-header {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.restaurant-header img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 1.5rem;
+}
+
+.restaurant-info h2 {
+  color: #e23744;
+  font-weight: 700;
+}
+
+.restaurant-info p {
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: #e23744 !important;
+  border-color: #e23744 #e23744 #fff;
+}
+
+/* Menu Cards */
+.menu-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.menu-card .card-body h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+.menu-card .btn {
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-outline-danger {
+  color: #e23744;
+  border-color: #e23744;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e23744;
+  color: #fff;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .restaurant-info {
+    padding: 1rem;
+  }
+}
